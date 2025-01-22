@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@700&display=swap");
+
+/* General Styles */
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+    background: black;
+    color: #E6C591;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border-radius: 4px;
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #E6C591;
+    background: black;
+    color: #E6C591;
+}
+.buttonss {
+    padding-top: 10px;
+}
+button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    margin: 0px;
+    background-color: black;
+}
+.flashcard-logo {
+    margin-top: 10px;
+}
+
+.drop-down {
+    background-color: black;
+    color: #E6C591;
+}
+
+.create-box{
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 40px;
+    align-items: center;
+}
+.create-box label{
+    margin-top: 5px;
+}
+.create-box textarea{
+    width: 400px;
+    border-radius: 5px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 3px;
+    background-color: black;
+    color: #E6C591;
+}
+/* Flashcards Container */
+.flashcards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0 10px;
+    width: 100%;
+    margin-top: 30px;
+    background: black;
+}
+
+/* Flashcard Style */
+.flashcard {
+    width: 360px;
+    word-wrap: break-word;
+    height: 300px;
+    margin: 10px;
+    background: #E6C591;
+    color: black;
+    box-shadow: 10px 12px 12px 10 #E6C591;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.question-item {
+    margin-bottom: 15px;
+}
+
+.question-list {
+    margin-top: 10px;
+}
+
+.flashcard h2 {
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 1px solid red;
+}
+
+/* Ensure the answer starts hidden */
+.flashcard .answer {
+    display: none;
+    color: ghostwhite;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 520px) {
+    .flashcard {
+        width: 280px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 355px) {
+    .flashcard {
+        width: 190px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Design.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="flashcard-logo">
+                    <h1>Flashcards</h1>
+                </div>
+                <div class="buttonss">
+                    <button onclick="newShown()">New Card</button>
+                    <button onclick="delCard()">Delete All</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+
+    <!-- Group Selector -->
+    <center>
+    <img style="height: 150px;" src="vin.svg">
+    </center>
+    
+    <!-- Create Flashcard Box -->
+    <div class="container">
+        <div class="create-box">
+            <h2 style="text-align: center; padding-bottom: 20px;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 400;
+            ">Create Flashcard</h2>
+            <br>
+            <div class="container-group-selector">
+                <center>
+                <label for="group-select">Select Group:</label>
+                <select class="drop-down" id="group-select">
+                    <option value="">Choose a Group</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Dev-Ops">Dev-Ops</option>
+                    <option value="DSA">DSA</option>
+                    <option value="Web-Dev">Web-Dev</option>
+                </select>
+                </center>
+            </div>
+            <br>
+            <label for="question">Question</label>
+            <br>
+            <textarea id="question"></textarea>
+            <br><br>
+            <label for="answer">Answer</label>
+            <br>
+            <textarea id="answer"></textarea>
+            <br><br>
+            <div>
+                <button onclick="addCard()">Save</button>
+                <button onclick="hideBox()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flashcard Display -->
+    <div class="flashcards"></div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
